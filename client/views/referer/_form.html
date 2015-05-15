@@ -1,0 +1,38 @@
+<template name="referer_form">
+    <form id="referer_form"> 
+        <div class="form-group {{#if error 'name'}}has-error{{/if}}">
+<label for="name" class="control-label">name *</label>
+<input type="text" id="name" value="{{name}}" placeholder="name" class="form-control">
+<span class="help-block">{{error "name"}}</span>
+</div>
+<div class="form-group {{#if error 'metehits'}}has-error{{/if}}">
+<label for="metehits" class="control-label">metehits </label>
+<input type="number" id="metehits" value="{{metehits}}" placeholder="metehits" class="form-control">
+<span class="help-block">{{error "metehits"}}</span>
+</div>
+<div class="form-group {{#if error 'phone'}}has-error{{/if}}">
+<label for="phone" class="control-label">phone *</label>
+<input type="number" id="phone" value="{{phone}}" placeholder="phone" class="form-control">
+<span class="help-block">{{error "phone"}}</span>
+</div>
+<div class="form-group {{#if error 'formhits'}}has-error{{/if}}">
+<label for="formhits" class="control-label">formhits </label>
+<input type="number" id="formhits" value="{{formhits}}" placeholder="formhits" class="form-control">
+<span class="help-block">{{error "formhits"}}</span>
+</div>
+<div class="form-group {{#if error 'urlname'}}has-error{{/if}}">
+<label for="urlname" class="control-label">urlname *</label>
+<input type="text" id="urlname" value="{{urlname}}" placeholder="urlname" class="form-control">
+<span class="help-block">{{error "urlname"}}</span>
+</div>
+<div class="form-group {{#if error 'mmhits'}}has-error{{/if}}">
+<label for="mmhits" class="control-label">mmhits </label>
+<input type="number" id="mmhits" value="{{mmhits}}" placeholder="mmhits" class="form-control">
+<span class="help-block">{{error "mmhits"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'refererIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

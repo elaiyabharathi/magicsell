@@ -1,0 +1,33 @@
+<template name="seller_form">
+    <form id="seller_form"> 
+        <div class="form-group {{#if error 'name'}}has-error{{/if}}">
+<label for="name" class="control-label">name *</label>
+<input type="text" id="name" value="{{name}}" placeholder="name" class="form-control">
+<span class="help-block">{{error "name"}}</span>
+</div>
+<div class="form-group {{#if error 'email'}}has-error{{/if}}">
+<label for="email" class="control-label">email *</label>
+<input type="text" id="email" value="{{email}}" placeholder="email" class="form-control">
+<span class="help-block">{{error "email"}}</span>
+</div>
+<div class="form-group {{#if error 'phone'}}has-error{{/if}}">
+<label for="phone" class="control-label">phone *</label>
+<input type="number" id="phone" value="{{phone}}" placeholder="phone" class="form-control">
+<span class="help-block">{{error "phone"}}</span>
+</div>
+<div class="form-group {{#if error 'bookstosell'}}has-error{{/if}}">
+<label for="bookstosell" class="control-label">bookstosell *</label>
+<input type="number" id="bookstosell" value="{{bookstosell}}" placeholder="bookstosell" class="form-control">
+<span class="help-block">{{error "bookstosell"}}</span>
+</div>
+<div class="form-group {{#if error 'college'}}has-error{{/if}}">
+<label for="college" class="control-label">college *</label>
+<input type="text" id="college" value="{{college}}" placeholder="college" class="form-control">
+<span class="help-block">{{error "college"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'sellerIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

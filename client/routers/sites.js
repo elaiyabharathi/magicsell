@@ -1,6 +1,6 @@
 /* DASHBOARDS */
 Router.route('/', {
-    name: 'sitesIndex',
+    name: 'dummydesign',
     controller: SitesController,
 });
 /* EOF DASHBOARDS */

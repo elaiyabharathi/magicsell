@@ -1,19 +1,22 @@
 <head>
-    <title>Meteoris</title>
+    <title>MagicMarket</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/svg/logo.svg">
+    <link rel="shortcut icon" href="/svg/magicmark.svg">
 </head>
 <template name="basic"> 
     {{> meteorisFlash}}
-    <div class="meteoris-content">
+    <div class="meteoris-content">				
         <!--{{>yield region="templateBasicHeader"}}-->
+	<!--{{> dummydesign}}-->
+	<!--commented from below -->
         {{> templateBasicHeader}}
         {{> status}}
+	
         {{>yield}}
     </div>
     <!--{{>yield region="templateBasicFooter"}}-->
-    {{> templateBasicFooter}}
+    <!--{{> templateBasicFooter}}-->
 </template>
 
 
